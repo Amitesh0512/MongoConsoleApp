@@ -3,34 +3,8 @@ using MongoDB.Driver;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
-
-//Model
-public class Person
-{
-    [BsonId]
-    [BsonRepresentation(BsonType.ObjectId)]
-    public string Id { get; set; }
-
-    public string Name { get; set; }
-    public int Age { get; set; }
-}
-public class Address
-{
-    public string Street { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string ZipCode { get; set; }
-}
-public class PersonWithAddress
-{
-    [BsonId]
-    [BsonRepresentation(BsonType.ObjectId)]
-    public string Id { get; set; }
-
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public Address Address { get; set; }
-}
+using System.Linq;
+using System.Threading.Tasks;
 
 class Program
 {
