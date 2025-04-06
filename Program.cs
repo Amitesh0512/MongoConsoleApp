@@ -11,7 +11,7 @@ class Program
     static void Main(string[] args)
     {
         // Connection string to MongoDB
-        var connectionString = "mongodb+srv://amitesh0512:AnupamAlok%402099@cluster0.s5hw12l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+        var connectionString = "mongodb+srv://<username>:<password>@cluster0.s5hw12l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
         var client = new MongoClient(connectionString);
         var database = client.GetDatabase("testdb");
         InsertPerson(client);    
