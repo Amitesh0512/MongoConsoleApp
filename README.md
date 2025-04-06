@@ -1,5 +1,3 @@
-# MongoConsoleApp
-
 # MongoDB Console App (C# .NET)
 
 A basic C# console application that connects to a MongoDB Atlas cluster, performs simple **CRUD operations**, and retrieves data from a collection.
